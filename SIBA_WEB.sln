@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIBA_WEB", "SIBA_WEB\SIBA_WEB.csproj", "{AAF5644B-94EA-4F9A-AF24-ACBA3006057F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAF5644B-94EA-4F9A-AF24-ACBA3006057F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF5644B-94EA-4F9A-AF24-ACBA3006057F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF5644B-94EA-4F9A-AF24-ACBA3006057F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF5644B-94EA-4F9A-AF24-ACBA3006057F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A88D8C4E-2CE4-4CC6-8DB4-245B59667633}
+	EndGlobalSection
+EndGlobal

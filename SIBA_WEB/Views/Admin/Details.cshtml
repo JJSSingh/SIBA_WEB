@@ -1,0 +1,88 @@
+﻿@model SIBA_WEB.Models.Alumno
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Alumno</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NoControl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NoControl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Semester)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Semester)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CanCreateToken)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CanCreateToken)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+    </dl>
+</div>
+
+<div>
+
+    @foreach(var item in ViewBag.data)
+    {
+    <li>
+        <a href=@item>@item</a>
+    </li>    
+    }
+
+</div>
+
+<div>
+    <hr />
+
+    @Html.ActionLink("Aceptar la documentacion", "ChangeStatus", new { id = Model.NoControl }) 
+    <hr />
+    @Html.ActionLink("Becar al alumno", "ChangeStatusToActive", new { id = Model.NoControl })
+</div>

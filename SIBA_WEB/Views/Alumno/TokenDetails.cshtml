@@ -1,0 +1,42 @@
+﻿@model SIBA_WEB.Models.ViewModels.ViewToken
+
+@{
+    ViewData["Title"] = "TokenDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>TokenDetails</h2>
+
+<div>
+    <h4>ViewToken</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.token)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.token)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TokenCreated)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TokenCreated)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.isTokenUsed)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.isTokenUsed)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Profile">Back to the Profile</a>
+</div>
