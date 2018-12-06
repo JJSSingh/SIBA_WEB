@@ -52,7 +52,8 @@ namespace SIBA_WEB
             });
             //services.AddSingleton<IBloobStorage> (s => { })
             services.AddDbContext<IdentityContext>(options =>
-                    options.UseSqlServer(
+                    options.UseSqlite(
+                    //options.UseSqlServer(
                         Configuration.GetConnectionString("EntityContextConnection")));
 
             services
