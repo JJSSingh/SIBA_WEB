@@ -35,3 +35,28 @@ body {
         display: none;
     }
 }
+
+.sub-container {
+    -webkit-box-shadow: 4px 10px 50px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 10px 50px -14px rgba(0,0,0,0.75);
+    box-shadow: 4px 10px 50px -14px rgba(0,0,0,0.75);
+}
+
+.itm {
+    width: 32%;
+    float: left;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+p {
+    color: #797979;
+    font-family: "helvetica";
+}
+
+h4 {
+    font-family: "helvetica";
+}
+
+.txt-centrado{
+    text-align:center;
+}
