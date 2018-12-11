@@ -4,17 +4,25 @@
     ViewData["Title"] = "Details";
 }
 
-<h2>Perfil</h2>
 
-<div>
 
+<div class="clearfix">
+    <div style="float:left;">
+        <h2>Perfil</h2>
+    </div>
+    <div style="float:right; color:green;">
+        <h2>
+            @Html.DisplayNameFor(model => model.Status) : @Html.DisplayFor(model => model.Status)
+        </h2> 
+    </div>
+    
 
 </div>
 
 <div>
-    <h4>Alumno --Falta tomar la sesion para mostrar los datos</h4>
+    <h4>Alumno</h4>
     <hr />
-    <dl class="dl-horizontal">
+    <dl class="dl-horizontal tamanio" style="font-size:20px;">
         <dt>
             @Html.DisplayNameFor(model => model.NoControl)
         </dt>
@@ -71,7 +79,4 @@
         </dd>
     </dl>
 </div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to List</a>
-</div>
+

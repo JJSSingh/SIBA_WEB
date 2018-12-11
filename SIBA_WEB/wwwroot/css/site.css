@@ -60,3 +60,7 @@ h4 {
 .txt-centrado{
     text-align:center;
 }
+
+.tamanio dl{
+    font-size:20px;
+}
